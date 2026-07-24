@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Thomas Roofing - Proposal</title>
+<meta name="description" content="Proposal prepared for Thomas Roofing (NW) Ltd.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0c0f; --panel:#15171c; --panel2:#1d2027; --ink:#f2f3f5; --mut:#98a0ac;
+  --line:#282c34; --yellow:#f5d90a; --yellow-dk:#c9ae00; --good:#3fb950; --warn:#d29922; --bad:#e0554f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--yellow);font-weight:700}
+h1{font-size:clamp(30px,4.6vw,42px);font-weight:800;letter-spacing:-.015em;margin:10px 0 8px}
+h2{font-size:clamp(24px,3.4vw,32px);font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+h3{font-size:20px;font-weight:700}
+p{color:var(--mut)}
+b,strong{color:var(--ink)}
+a{color:var(--yellow);text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{padding:48px 0 34px;border-bottom:1px solid var(--line);
+  background:radial-gradient(1100px 380px at 72% -20%,rgba(245,217,10,.14),transparent)}
+header .sub{color:var(--mut);font-size:16px;max-width:690px}
+
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+.h{font-size:12.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.15em;font-weight:700;margin-bottom:18px}
+
+.today{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--yellow);border-radius:10px;padding:22px 24px}
+.today p{font-size:16px}
+.today p+p{margin-top:11px}
+.today.green{border-left-color:var(--good)}
+.today.amber{border-left-color:var(--warn)}
+
+.maths{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:820px){.maths{grid-template-columns:1fr 1fr}}
+.mcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+.mcard .mlab{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
+.mcard .mbig{font-size:27px;font-weight:900;margin:7px 0 2px}
+.mcard .mbig.g{color:var(--good)}
+.mnote{font-size:13px;color:var(--mut);margin-top:14px}
+
+.fixgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:820px){.fixgrid{grid-template-columns:1fr}}
+.fixcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;border-top:3px solid var(--warn)}
+.fixcard .fnum{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700;margin-bottom:7px}
+.fixcard h4{font-size:16px;margin-bottom:6px}
+.fixcard p{font-size:13.5px}
+.fixcard code{background:#080a0d;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:12.5px;color:#ffd98a}
+
+.pk{display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:start}
+@media(max-width:840px){.pk{grid-template-columns:1fr}}
+.pack{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px 26px;position:relative}
+.pack.rec{border-color:var(--yellow);background:linear-gradient(170deg,#2a2606,var(--panel))}
+.rectag{position:absolute;top:-12px;left:26px;background:var(--yellow);color:#15171c;font-size:11.5px;
+  font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:99px}
+.pack .pname{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--mut);font-weight:700}
+.pack .price{font-size:44px;font-weight:800;margin:8px 0 2px;letter-spacing:-.02em}
+.pack .price span{font-size:16px;color:var(--mut);font-weight:600}
+.pack .pnote{font-size:13.5px;color:var(--mut);margin-bottom:20px}
+.pack ul{list-style:none}
+.pack li{display:flex;gap:11px;padding:9px 0;font-size:15.2px;border-top:1px solid var(--line);align-items:flex-start}
+.pack li:first-child{border-top:0}
+.tick{color:var(--good);font-weight:800;flex-shrink:0;margin-top:1px}
+.pack li span.t{color:var(--ink)}
+.pack li small{display:block;color:var(--mut);font-size:13.4px;margin-top:2px;line-height:1.45}
+
+.incl{background:linear-gradient(160deg,#12241a,var(--panel));border:1px solid #2b7a41;border-radius:12px;
+  padding:20px 22px;margin-top:18px}
+.incl b{color:#7ede9a}
+
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:840px){.tl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tl{grid-template-columns:1fr}}
+.tl div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.tl .wk{font-size:11.5px;text-transform:uppercase;letter-spacing:.13em;color:var(--yellow);font-weight:700;margin-bottom:7px}
+.tl h4{font-size:16px;font-weight:700;margin-bottom:5px}
+.tl p{font-size:14px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+.box h3{margin-bottom:12px;font-size:17px}
+.box ul{list-style:none}
+.box li{padding:7px 0;font-size:15px;color:var(--mut);display:flex;gap:10px;align-items:flex-start}
+.box li:before{content:"";width:5px;height:5px;border-radius:99px;background:var(--yellow);flex-shrink:0;margin-top:9px}
+.box.no li:before{background:#6b6b6b}
+
+.faq{max-width:100%}
+.faqItem{border-bottom:1px solid var(--line)}
+.faqQ{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:19px 0;cursor:pointer;
+  font-weight:700;font-size:16px;color:var(--ink)}
+.faqQ .plus{color:var(--yellow);transition:transform .25s;flex-shrink:0;font-size:24px;font-weight:800;
+  display:inline-block;line-height:1;width:22px;text-align:center}
+.faqItem.open .faqQ .plus{transform:rotate(45deg)}
+.faqA{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faqA p{color:var(--mut);font-size:15px;padding-bottom:19px;max-width:760px}
+.faqItem.open .faqA{max-height:340px}
+
+.nextgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.nextgrid{grid-template-columns:1fr}}
+.nextcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;border-top:3px solid var(--yellow)}
+.nextcard .nstep{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--yellow);font-weight:800;margin-bottom:8px}
+.nextcard h4{font-size:16px;margin-bottom:6px}
+.nextcard p{font-size:13.8px}
+
+.plain{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:22px 24px;font-size:15.4px}
+.plain p+p{margin-top:11px}
+.fine{font-size:12.5px;color:var(--mut);margin-top:14px}
+
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Prepared for Chris Thomas</div>
+    <h1>Thomas Roofing - Proposal</h1>
+    <div class="sub">300 roofs and £600k last year says the business works. The website is the part that isn't keeping up, and that's the cheapest thing here to fix.</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="h">The number this gets judged against</div>
+    <div class="maths">
+      <div class="mcard"><div class="mlab">Roofs Last Year</div><div class="mbig">300</div><div class="msub">Your number</div></div>
+      <div class="mcard"><div class="mlab">Turnover</div><div class="mbig">£600k</div><div class="msub">Your number</div></div>
+      <div class="mcard"><div class="mlab">Average Job</div><div class="mbig">~£2,000</div><div class="msub">£600k over 300</div></div>
+      <div class="mcard"><div class="mlab">Break Even At</div><div class="mbig g">1 roof</div><div class="msub">A month, on the recommended option</div></div>
+    </div>
+    <p class="mnote">This is the part worth being blunt about. At roughly £2,000 a job, <b>one extra roof a month covers the entire fee.</b> You are not betting a big budget on an unproven idea, you are trying to add a handful of jobs to a business already turning over £600k with the capacity to take more.</p>
+  </section>
+
+  <section>
+    <div class="h">Three things to fix before any ad spend</div>
+    <div class="fixgrid">
+      <div class="fixcard">
+        <div class="fnum">Fix 1 &middot; Biggest</div>
+        <h4>Your testimonials page is empty</h4>
+        <p>It's in your main menu, it says "read what our previous customers have to say", and there are <code>zero</code> testimonials underneath. Just a link sending people off to TrustATrader. That's the exact moment someone decides whether to trust you.</p>
+      </div>
+      <div class="fixcard">
+        <div class="fnum">Fix 2</div>
+        <h4>CORC appears nowhere</h4>
+        <p>You've been a Confederation of Roofing Contractors member since February 2014, number 6944. The word <code>CORC</code> appears <code>0</code> times on your site. So do <code>guarantee</code>, <code>insured</code> and <code>20 years</code>.</p>
+      </div>
+      <div class="fixcard">
+        <div class="fnum">Fix 3</div>
+        <h4>Your Google listing is waffle</h4>
+        <p>Your meta description is your own menu scraped into a sentence and cut off mid-word. Your page title is <code>Home - Thomas Roofing Ltd</code>. Those two lines are your advert in search results.</p>
+      </div>
+    </div>
+    <div class="incl">
+      <p><b>All three are included in month one at no extra cost.</b> Plus conversion tracking on the analytics you already have. No setup fee, no build charge. If you cancelled after month one, the fixes stay on your site and stay yours.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Why this one is unusual</div>
+    <div class="today green">
+      <p><b>You already have the proof. Most people I look at don't.</b></p>
+      <p>Eleven years of unbroken trade body accreditation, listings on two review platforms, 300 roofs in a year, twenty years on the tools and a limited company with a full filing history since 2017. That is a genuinely strong hand.</p>
+      <p>The expensive part of marketing a roofer is usually building credibility from nothing. Yours already exists, it is just not on your own website. That makes this cheaper and faster than it would be for almost anyone else in Merseyside.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The two options</div>
+    <div class="pk">
+
+      <div class="pack">
+        <div class="pname">Option 1</div>
+        <div class="price">£1,500<span>/mo</span></div>
+        <div class="pnote">£750 ad spend, £750 management. No lock-in, cancel any time.</div>
+        <ul>
+          <li><span class="tick">&#10003;</span><span class="t">All three fixes above, included month one<small>Real testimonials live, CORC surfaced, proper title and description, conversion tracking.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Local ads across Liverpool and the Wirral<small>Starting on your two strongest areas rather than spreading across Merseyside.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Built around CORC accreditation<small>Eleven years of it is the strongest differentiator you have, and nobody currently sees it.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Monthly reporting<small>Enquiries and cost per booked roof. Not impressions.</small></span></li>
+        </ul>
+      </div>
+
+      <div class="pack rec">
+        <div class="rectag">Recommended</div>
+        <div class="pname">Option 2</div>
+        <div class="price">£2,500<span>/mo</span></div>
+        <div class="pnote">£1,250 ad spend, £1,250 management. No lock-in, cancel any time.</div>
+        <ul>
+          <li><span class="tick">&#10003;</span><span class="t">Everything in Option 1, at nearly double the reach</span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Re-roofs and repairs run as separate campaigns<small>A full re-roof is a planned purchase, a leak is an emergency. Same advert for both wastes money on each.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">A commercial section built and targeted<small>The word "commercial" currently appears zero times on your site despite you doing the work.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Wider targeting across Merseyside<small>St Helens, Widnes, Runcorn, Prescot and Huyton.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">This is the one I'd pick<small>At £2,000 a job you can afford to bid properly, and separating re-roofs from repairs is where most of the gain is.</small></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="h">One thing to correct</div>
+    <div class="today amber">
+      <p><b>Your margins are not on Companies House, and that's not your fault.</b></p>
+      <p>You mentioned they'd be filed there. I checked company <b>11071653</b>. Every set of accounts since incorporation in 2017 has been filed as <b>total exemption full accounts</b>, which for a company your size means <b>a balance sheet only, with no profit and loss account</b>. Turnover, costs and margin are all legally exempt from public filing.</p>
+      <p>So the £600k and the margin behind it are numbers only you and your accountant hold. I can't verify them and I'm not going to pretend otherwise. But <b>your accountant can tell you your gross margin per roof in about five minutes</b>, and that one number is what decides how hard we can afford to bid for a customer. It's the most useful thing you could bring to the next conversation.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">How it runs</div>
+    <div class="tl">
+      <div><div class="wk">Week 1</div><h4>Fix The Site</h4><p>Testimonials live, CORC surfaced, title and description written, tracking configured.</p></div>
+      <div><div class="wk">Week 2</div><h4>Build Campaigns</h4><p>Re-roofs and repairs split, built around the accreditation and 300 roofs a year.</p></div>
+      <div><div class="wk">Week 3</div><h4>Live &amp; Tune</h4><p>Ads go live, first enquiries reviewed, targeting tightened.</p></div>
+      <div><div class="wk">Ongoing</div><h4>Report &amp; Scale</h4><p>Monthly reporting, budget moved to whatever's booking roofs.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What you own, and what you don't pay me for</div>
+    <div class="two">
+      <div class="box">
+        <h3>Yours, always</h3>
+        <ul>
+          <li>Every enquiry and every customer generated</li>
+          <li>The ad account, in your name, you keep it if we part</li>
+          <li>All tracking data and reporting history</li>
+          <li>Every fix made to your website, they stay done</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <h3>Not charged, and not needed</h3>
+        <ul>
+          <li>A new website, yours is fast and works, it needs finishing not replacing</li>
+          <li>SEO retainer, that's a 6-12 month play and you want work sooner</li>
+          <li>Setup or onboarding fee, there isn't one</li>
+          <li>Any markup on your ad spend, ever</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The questions you're probably about to ask</div>
+    <div class="faq">
+      <div class="faqItem open">
+        <div class="faqQ">I'm already doing 300 roofs. Why do I need this?<span class="plus">+</span></div>
+        <div class="faqA"><p>You might not, and I'd rather say that than oversell it. The honest case is narrower: you said you could take on a bit more, and right now the people comparing you against two other Merseyside roofers cannot see your accreditation or a single review on your own site. That's costing you jobs you already paid to get in front of. Fixing it helps whether or not you ever run an advert.</p></div>
+      </div>
+      <div class="faqItem">
+        <div class="faqQ">Can't I just get my web person to fix the testimonials?<span class="plus">+</span></div>
+        <div class="faqA"><p>Yes, and you should ask them, it's a quick job and it shouldn't have been left empty. If they'll do it that's a genuine saving. The fixes are included here either way, so it costs you nothing, it just means week one moves faster.</p></div>
+      </div>
+      <div class="faqItem">
+        <div class="faqQ">What if it doesn't bring any work in?<span class="plus">+</span></div>
+        <div class="faqA"><p>You cancel, there's no contract and no notice period. What I won't do is quietly keep spending and hope it turns around. If it isn't producing by month two you'll hear it from me before you have to ask.</p></div>
+      </div>
+      <div class="faqItem">
+        <div class="faqQ">How much of my time does this take?<span class="plus">+</span></div>
+        <div class="faqA"><p>Very little. I need website access, your Google Analytics, ten real customers I can quote as testimonials, and your gross margin per roof from the accountant. After that it's a monthly report you can read in five minutes.</p></div>
+      </div>
+      <div class="faqItem">
+        <div class="faqQ">Why not just do SEO?<span class="plus">+</span></div>
+        <div class="faqA"><p>You could, and long term it's worth doing. But SEO takes six to twelve months to move and you said you've got capacity now. Ads produce enquiries in weeks. The site fixes included here help your search rankings anyway, so you're not choosing against SEO, just not paying a retainer for it yet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">If you want to go ahead</div>
+    <div class="nextgrid">
+      <div class="nextcard">
+        <div class="nstep">Step 1</div>
+        <h4>Ten real testimonials</h4>
+        <p>Names, areas and what the job was. From Checkatrade, TrustATrader or your own phone. This is the single highest-value thing you can send me.</p>
+      </div>
+      <div class="nextcard">
+        <div class="nstep">Step 2</div>
+        <h4>Ask your accountant one question</h4>
+        <p>What's the gross margin on an average roof? That number decides the whole budget, and it takes them minutes.</p>
+      </div>
+      <div class="nextcard">
+        <div class="nstep">Step 3</div>
+        <h4>Website and analytics access</h4>
+        <p>Then week one starts. You carry on roofing and I'll come back when there's something to look at.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Being straight with you</div>
+    <div class="plain">
+      <p><b>There's no guarantee, and I'm not going to pretend otherwise.</b> I can't promise a number of roofs, and anyone who does before running a single advert is guessing.</p>
+      <p><b>You're also the strongest business I've looked at in a while</b>, which cuts both ways. It means the marketing has a real chance of working, and it means you genuinely don't have to do this. If the answer is that you'd rather just fix the testimonials page yourself and leave it there, that's a reasonable call and I'd tell you so.</p>
+      <p><b>What I'm confident about</b> is the narrow bit: a homeowner comparing three Merseyside roofers right now cannot see that you're CORC accredited, cannot read a single review on your site, and finds a testimonials page with nothing on it. All of that is true today and all of it is fixable in a week.</p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  document.querySelectorAll('.faqQ').forEach(q=>{
+    q.addEventListener('click',()=>{
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faqItem').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+<footer>Prepared by Andrei Givero &middot; AG1 Consulting &nbsp;|&nbsp; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a><br>
+<span style="opacity:.7">Prices held for 30 days. Monthly, no lock-in, cancel any time.</span></footer>
+</body>
+</html>
